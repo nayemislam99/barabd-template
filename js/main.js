@@ -4,7 +4,7 @@ window.addEventListener("scroll", () => {
     header.classList.toggle('sticky', scrollY > 0);   
 });
 
-// icon bars
+// icon bars to toggle iconbar
 const iconBar = document.querySelector('#iconBar');
 iconBar.onclick  = () =>{
     iconBar.classList.toggle('fa-times');

@@ -35,9 +35,11 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .sub_head_div{
 text-align: center;
+padding: 2rem 0rem;
 }
 
 .sub_heading{   
+    text-align: center;
     font-weight: 300;
     font-size: 1.8rem;   
     color: var(--sub-primary-color);
@@ -98,7 +100,7 @@ header .navigation{
     font-size: 1.7rem;
 }
 
-header .navigation a{ 
+header .navigation a{    
     color: var(--white);
     font-weight: 700;
     margin-right:1rem;
@@ -362,13 +364,254 @@ header .icon i{
 
 .about_us .row .about_text p{
     font-size: 1.6rem;
-    color:var(--dark-light);
+    color:var(--dark);
     letter-spacing: .1rem;
     line-height: 150%;
 }
 
 
+/* Services Section */
+.services{
+    background-color: #f7f7f7;
+}
+.services .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr) );
+    gap:1rem;
+    padding: 2rem 7%;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
 
+.services .row .card{  
+
+   border-radius: 1rem;
+   margin-top: 1rem;
+   text-align: center;
+   padding: 2rem;
+   box-shadow: .2rem .5rem 1rem #ddcbf5 ;
+   overflow: hidden;
+   transition: .8s;
+   margin: 2rem 1rem;
+   background-color: #fff;
+}
+.service_icon i{
+    font-size: 3rem;
+    color:var(--secondary-color)
+}
+.services .row .card .service_text h3{
+    font-size: 2rem;
+    color: #000;
+    padding: 2rem 0rem;
+
+}
+.services .row .card .service_text p{
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 150%;
+
+}
+.services .row .card:hover{
+    background-color: var(--sub-primary-color);
+    cursor: pointer;
+    
+}
+.services .row .card:hover p, h3{
+    color: white;
+}
+.services .row .card:hover h3{
+    color: white;
+}
+.services .row .card:hover .service_icon i{
+    color: white;
+}
+/* end services section  */
+
+/* team section start  */
+.flex2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr) );
+    gap:1rem;
+    padding: 2rem 7%;
+    
+}
+
+.teams .team-img img{
+    -webkit-transition: all .5s ease-in-out;
+    overflow: hidden;
+    
+    width: 100%;
+}
+.teams .team-img-up img{
+    -webkit-transition: all .5s ease-in-out;
+    overflow: hidden;
+    
+    width: 100%;
+}
+.team-member, .team-img{
+    position: relative;
+    overflow: hidden;
+}
+.team-member, .team-img-up{
+    position: relative;
+    overflow: hidden;
+}
+.team-title{
+    font-size: 20px;
+}
+.overlay{
+    background-color: rgba(20, 20, 20, 0.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    Transition: all .5s ease-in-out;
+    color: fff;
+}
+.team-details{
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 5%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    -webkit-transition: all .5s ease-in-out;
+}
+.team-details p {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.team-details h2 span {
+    color: var(--white);
+}
+
+
+.team-img:hover .team-details{
+    opacity: 1;
+    /* margin-top: -1rem; */
+}
+.team-img-up:hover .team-details{
+    opacity: 1;
+    /* margin-top: -1rem; */
+}
+.team-img:hover .overlay{
+    opacity: 1;
+   
+}
+.team-img-up:hover .overlay{
+    opacity: 1;
+    /* color: white; */
+   
+}
+.socials a i {
+    display: inline-block;
+    width: 3.7rem;
+    height: 3.7rem;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.socials a i:hover{
+    color: var(--secondary-color);
+    transform: rotate(360deg); 
+}
+.team-img:hover .team-details p,h2,span{
+    color: #fff;
+}
+.team-img-up:hover .team-details p,h2,span{
+    color: #fff;
+}
+/* team section end  */
+
+/* our valuable clients start */
+/* .clients{
+    margin: 10rem 0rem;
+} */
+.clients{
+   background-color: #c7b0e7;
+   width: 100%;
+   height: auto;
+
+}
+.clients .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem 7%;
+}
+.clients .card{
+    height: auto;
+    width: 20rem;
+    border-radius: 5%;
+    background-color: #e4dede;
+    /* box-shadow: 1rem 1rem 1rem #e4e4e4; */
+    transition: all .2s ease-in-out;
+    
+}
+.clients .card img{
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+.clients .card p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+
+/* our valuable clients end */
+
+/* tesimonial section */
+
+/* swipr slide  */
+/* .swiper2 {
+    width: 800px;
+  } */
+
+  .swiper-slide {
+    height: 300px;
+    background: #882525;
+    line-height: 300px;
+    text-align: center;
+  }
+
+  .swiper-slide:nth-child(2) {
+    background: #8acc7d;
+  }
+
+  .swiper-slide:nth-child(3) {
+    background: #b7cc7d;
+  }
+
+  .swiper-slide:nth-child(4) {
+    background: #9eb75c;
+  }
+
+  .swiper-slide:nth-child(5) {
+    background: #7da8cc;
+  }
+
+  .swiper-slide:nth-child(6) {
+    background: #96cc7d;
+  }
+
+  .swiper-slide:nth-child(7) {
+    background: #cc7dae;
+  }
 
 /* media queries */
 
