@@ -31,16 +31,16 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 3rem;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 .sub_head_div{
 text-align: center;
-padding: 2rem 0rem;
+padding: 3rem 0rem;
 }
 
 .sub_heading{   
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.8rem;   
     color: var(--sub-primary-color);
     border-bottom: .1rem solid var(--sub-primary-color);
