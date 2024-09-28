@@ -1,7 +1,7 @@
-let header = document.querySelector('header');
+let menuHeader = document.querySelector('header');
 let headerNavigation = document.querySelector('.navigation');
 window.addEventListener("scroll", () => {
-    header.classList.toggle('sticky', scrollY > 0);   
+    menuHeader.classList.toggle('sticky', scrollY > 0);   
 });
 
 // icon bars to toggle iconbar
